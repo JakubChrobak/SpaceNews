@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <script src="./library.js" type="text/javascript" defer ></script>
+  <link href="./library.css" rel="stylesheet">
+</head>
+<body>
+    <form class='search' action="">
+        <select class="input">
+            <option value="0" disabled selected>brak sortowania</option>
+            <option value="1">od najnowszych</option>
+            <option value="2">od najstarszych</option>
+
+        </select>
+        <button class="submit" type="submit">Sortuj</button>
+    </form>
+    <form class='search-query' action="">
+        <input type="text" class="input-query">
+        <button class="submit" type="submit">Szukaj</button>
+    </form>
+    <div class="news-list"></div>
+</body>
+</html>
