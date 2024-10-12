@@ -1,109 +1,72 @@
-*{
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
     padding: 0;
-    color: bisque;
-    background-color: rgb(8, 8, 8);
 }
 
-.search {
-    display: flex;
-    justify-content: space-around;
+header {
+    background: #35424a;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-align: center;
 }
 
-ul {
-    width: 100%;
-}
-
-ul li {
-    padding: 20px 40px;
-    border: 1px solid gray;
-    list-style-type: none;
-    line-height: 30px;
-    background-color: rgb(20, 20, 20);
-}
-
-h1 {
-    background-color: rgb(20, 20, 20);
-    color: tomato;
-}
-
-p {
-    background-color: rgb(20, 20, 20);
+input[type="text"], select {
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
 }
 
 button {
-    text-align: center;
-    width: 200px;
-    padding: 10px;
-    background-color: gray
+    padding: 10px 20px;
+    background: #5cb85c;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
 }
 
-a {
-    text-decoration: none;
+button:hover {
+    background: #4cae4c;
 }
 
-a:hover {
-    background-color: red;
-}
-
-.articles-count {
-    background-color: rgb(62, 62, 62);
-    border: 1px solid gray;
-    width: 100px;
-    padding: 10px;
-    text-align: center;
-}
-
-div {
+#articlesContainer {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-}
-.input{
-    margin-top: 17px;
-    font-weight: 900;
-    height: 34px;
-    width: 60px;
-    color: black;
-    background-color: rgb(200, 200, 200);
-    text-align: center;
+    padding: 20px;
 }
 
-.submit {
-    margin-top: 17px;
-    text-align: center;
-    font-weight: 900;
-    height: 40px;
-    width: 120px;
-    padding: 10px;
-    color: black;
-    background-color: rgb(200, 200, 200);
+.article {
+    background: #ffffff;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 15px;
+    width: 300px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-.libraryLink {
-    margin-top: 17px;
-    font-size: 20px;
-    text-align: center;
-    border: 1px solid gray;
-    background-color: rgb(62 62 62);
-    padding: 10px;
-    height: 20px;
+.article img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
 }
 
-@media (min-width: 768px) {
-    ul {
-    display: grid; 
-    grid-template-columns: repeat(2, minmax(0, 0.5fr)); 
-    grid-auto-rows: minmax(0, auto);
-    gap: 25px;
-    justify-content: space-evenly;
-    }
+footer {
+    background: #35424a;
+    color: #ffffff;
+    padding: 10px 20px;
 }
 
-@media (min-width: 1200px) {
-    ul {
-    display: grid; 
-    grid-template-columns: repeat(3, minmax(0, 0.5fr)); 
-    grid-auto-rows: minmax(0, auto);
-    gap: 25px;
-    justify-content: space-evenly;
-    }
+footer h2 {
+    margin-top: 20px;
+}
+
+#libraryContainer {
+    list-style: none;
+    padding: 0;
+}
+
+#libraryContainer li {
+    margin: 5px 0;
 }
