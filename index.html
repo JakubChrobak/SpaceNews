@@ -1,22 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-    <link href="./style.css" rel="stylesheet">
-    <script src="./index.js" type="text/javascript" defer ></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Najnowsze Artykuły o Lotach Kosmicznych</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <form class='search' action="">
-        <p class="articles-count"></p>
-        <div>
-        <input type="text" class="input">
-        <button class="submit" type="submit">Zmień</button>
-        </div>
-        <a class = "libraryLink" href="library.html">Przejdź do biblioteki</a>
-    </form>
-    <ul class="news-list">
+    <header>
+        <h1>Najnowsze Artykuły o Lotach Kosmicznych</h1>
+        <input type="text" id="searchInput" placeholder="Wyszukaj artykuły..." />
+        <select id="filterSelect">
+            <option value="">Wszystkie źródła</option>
+            <option value="SpaceNews">SpaceNews</option>
+            <option value="SpacePolicyOnline.com">SpacePolicyOnline.com</option>
+            <!-- Dodaj inne źródła, jeśli dostępne -->
+        </select>
+    </header>
+    
+    
+    
+    <div id="loadingMessage"></div>
+    <div id="articlesContainer"></div>
 
-    </ul>
+    <script src="script.js"></script>
 </body>
 </html>
