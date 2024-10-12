@@ -8,7 +8,7 @@ let allLoadedArticles = 0;
 let allArticles = {}
 
 
-const API_ENDPOINT = "https://api.spaceflightnewsapi.net/v3"
+const API_ENDPOINT = "https://api.spaceflightnewsapi.net/v4"
 
 async function getAllArticlesCount(){
     const response = await fetch(API_ENDPOINT + "/articles/count")
