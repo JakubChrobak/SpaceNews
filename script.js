@@ -58,6 +58,15 @@ searchInput.addEventListener('input', () => {
     displayArticles(filteredArticles);
 });
 
+// Funkcja do filtrowania artykułów
+filterSelect.addEventListener('change', () => {
+    const selectedSource = filterSelect.value;
+    const filteredArticles = selectedSource ? articles.filter(article =>
+        article.news_site === selectedSource
+    ) : articles;
+    displayArticles(filteredArticles);
+});
+
 
 // Funkcja do sprawdzania, czy użytkownik przewinął na dół
 function checkScroll() {
